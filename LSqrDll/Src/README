@@ -1,0 +1,7 @@
+This is the C++ version of LSQR as translated from the
+C version by John Tomlin <tomlin@yahoo-inc.com>
+Tke license conditions are the same as described in the
+file lsqr_c.README included in this distribution.
+
+"make" will produce test program "testit".
+Running testit should produce output similar to "testit_output"

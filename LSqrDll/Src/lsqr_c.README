@@ -1,0 +1,34 @@
+lsqr_c.README
+
+The software for LSQR (C version) is provided by SOL, Stanford University
+under the terms of the Common Public License (CPL):
+http://oss.software.ibm.com/developerworks/opensource/license-cpl.html
+
+
+08 Sep 1999: First set of files provided by James W. Howse <jhowse@lanl.gov>.
+11 Oct 2000: Files unpacked by Michael Saunders.
+             Lines longer than 80 characters had extraneous carriage returns.
+             Tried to repair them, but not sure if I/O formats will be correct.
+
+Please send comments to Michael Saunders, SOL, Stanford University
+                        saunders@stanford.edu  650-723-1875
+-----------------------------------------------------------------------------
+
+The C version of LSQR involves the following files:
+
+   lsqr.c
+   lsqr.h
+   makefile
+   test_lsqr.c
+   test_lsqr.h
+   test_lstp.c
+   test_mult.c
+   test_prog.c
+
+test_lstp.c   contains lstp, a least-square test problem generator.
+              It constructs data for a matrix A and a vector b.
+test_mult.c   computes products Ax and A'y.
+test_lsqr.c   calls lstp to generate a problem,
+              then calls lsqr to solve it.
+test_prog.c   calls test_lsqr several times to generate and solve
+              various problems.
