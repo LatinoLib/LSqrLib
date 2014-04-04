@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSqrDotNetTest", "LSqrDotNetTest.csproj", "{F77080AC-03D1-41B0-B667-F5FBC3109565}"
 	ProjectSection(ProjectDependencies) = postProject
 		{070AC3B0-D732-4F78-92A8-23DC4867CED9} = {070AC3B0-D732-4F78-92A8-23DC4867CED9}
