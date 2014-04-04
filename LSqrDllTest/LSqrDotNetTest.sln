@@ -2,36 +2,17 @@
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSqrDotNetTest", "LSqrDotNetTest.csproj", "{F77080AC-03D1-41B0-B667-F5FBC3109565}"
-	ProjectSection(ProjectDependencies) = postProject
-		{070AC3B0-D732-4F78-92A8-23DC4867CED9} = {070AC3B0-D732-4F78-92A8-23DC4867CED9}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LSqrDll", "..\LSqrDll\Src\LSqrDll.vcproj", "{070AC3B0-D732-4F78-92A8-23DC4867CED9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Win32 = Debug|Win32
-		Debug|x64 = Debug|x64
-		Release|Win32 = Release|Win32
-		Release|x64 = Release|x64
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F77080AC-03D1-41B0-B667-F5FBC3109565}.Debug|Win32.ActiveCfg = Debug|x86
-		{F77080AC-03D1-41B0-B667-F5FBC3109565}.Debug|Win32.Build.0 = Debug|x86
-		{F77080AC-03D1-41B0-B667-F5FBC3109565}.Debug|x64.ActiveCfg = Debug|x64
-		{F77080AC-03D1-41B0-B667-F5FBC3109565}.Debug|x64.Build.0 = Debug|x64
-		{F77080AC-03D1-41B0-B667-F5FBC3109565}.Release|Win32.ActiveCfg = Release|x86
-		{F77080AC-03D1-41B0-B667-F5FBC3109565}.Release|Win32.Build.0 = Release|x86
-		{F77080AC-03D1-41B0-B667-F5FBC3109565}.Release|x64.ActiveCfg = Release|x64
-		{F77080AC-03D1-41B0-B667-F5FBC3109565}.Release|x64.Build.0 = Release|x64
-		{070AC3B0-D732-4F78-92A8-23DC4867CED9}.Debug|Win32.ActiveCfg = Debug|Win32
-		{070AC3B0-D732-4F78-92A8-23DC4867CED9}.Debug|Win32.Build.0 = Debug|Win32
-		{070AC3B0-D732-4F78-92A8-23DC4867CED9}.Debug|x64.ActiveCfg = Debug|x64
-		{070AC3B0-D732-4F78-92A8-23DC4867CED9}.Debug|x64.Build.0 = Debug|x64
-		{070AC3B0-D732-4F78-92A8-23DC4867CED9}.Release|Win32.ActiveCfg = Debug|Win32
-		{070AC3B0-D732-4F78-92A8-23DC4867CED9}.Release|Win32.Build.0 = Debug|Win32
-		{070AC3B0-D732-4F78-92A8-23DC4867CED9}.Release|x64.ActiveCfg = Release|x64
-		{070AC3B0-D732-4F78-92A8-23DC4867CED9}.Release|x64.Build.0 = Release|x64
+		{F77080AC-03D1-41B0-B667-F5FBC3109565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F77080AC-03D1-41B0-B667-F5FBC3109565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F77080AC-03D1-41B0-B667-F5FBC3109565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F77080AC-03D1-41B0-B667-F5FBC3109565}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
