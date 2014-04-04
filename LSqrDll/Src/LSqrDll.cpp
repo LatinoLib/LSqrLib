@@ -1,11 +1,11 @@
 /*==========================================================================;
  *
  *  File:          LSqrDll.cpp
- *  Version:       1.1
+ *  Version:       1.2
  *  Desc:		   LSQR DLL implementation
  *  Author:        Miha Grcar 
  *  Created on:    Oct-2007
- *  Last modified: Jul-2008
+ *  Last modified: Jun-2010
  *  License:       Common Public License (CPL)
  *  Note:
  *      See ReadMe.txt for additional info and acknowledgements.
@@ -146,7 +146,7 @@ LSQR_API void InsertValue(int mat_id, int row_idx, int col_idx, double val)
     mat->GetRow(row_idx)->InsertValue(col_idx, val);
 }
 
-LSQR_API double *DoLSqr(int mat_id, int mat_transp_id, double *rhs, int max_iter)
+LSQR_API double *DoLSqr(int mat_id, int mat_transp_id, double *init_sol, double *rhs, int max_iter)
 {
     SparseMatrix *mat = GetMatrix(mat_id);
     SparseMatrix *mat_transp = GetMatrix(mat_transp_id);
@@ -163,11 +163,20 @@ LSQR_API double *DoLSqr(int mat_id, int mat_transp_id, double *rhs, int max_iter
         lsqr->input->rhs_vec->elements[idx] = rhs[idx];
     }
     // initial guess for x 
-    // *** this should be an input parameter
-    for (int col_idx = 0; col_idx < num_cols; col_idx++)
-    {
-        lsqr->input->sol_vec->elements[col_idx] = 0.0;
-    }
+    if (init_sol == NULL)
+	{
+		for (int col_idx = 0; col_idx < num_cols; col_idx++)
+		{
+			lsqr->input->sol_vec->elements[col_idx] = 0.0;
+		}
+	}
+	else	
+	{
+		for (int col_idx = 0; col_idx < num_cols; col_idx++)
+		{
+			lsqr->input->sol_vec->elements[col_idx] = init_sol[col_idx];
+		}
+	}
     // input parameters
     lsqr->input->num_rows = num_rows;
     lsqr->input->num_cols = num_cols;
