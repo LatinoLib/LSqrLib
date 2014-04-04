@@ -5,32 +5,29 @@ LSQR Windows DLL and LSQR.NET Read-me
 Software Version
 ----------------
 
-Version 1.1, July 2008. 
+Version 1.2, June 2010. 
 
 
 Requirements 
 ------------
 
 The solution (.sln) and project (.csproj/.vcproj) files provided in this package were created in 
-Visual Studio 2005. With some manual work it is possible to compile the software in Visual Studio
-2003 as well. The executable in the Bin folder was compiled with VS 2005; .NET Framework 2.0 is
-thus required to execute it.
+Visual Studio 2008.
 
 
 LSQR Windows DLL
 ----------------
 
 The LSQR DLL binaries are contained in LSqrDll\Bin\x86 and LSqrDll\Bin\x64 (.dll [and .lib for VS 
-2005]). The C++ header file is contained in LSqrDll\Src (LSqrDll.h). The VS 2005 solution file is 
+2008]). The C++ header file is contained in LSqrDll\Src (LSqrDll.h). The VS 2008 solution file is 
 contained in LSqrDll\Src (LSqrDll.sln).
 
 
 LSQR.NET
 --------
 
-The LSQR.NET examples are contained in LSqrDllTest\Bin\x86 and LSqrDllTest\Bin\x64 (LSqrDllTest.exe). 
 The C# wrapper is contained in LSqrDllTest (LSqrDotNet.cs). To see how LSQR is supposed to be used 
-in C#, take a look at LSqrDllTest\Program.cs. The VS 2005 solution file is contained in LSqrDllTest 
+in C#, take a look at LSqrDllTest\Program.cs. The VS 2008 solution file is contained in LSqrDllTest 
 (LSqrDllTest.sln).
 
 

@@ -1,7 +1,7 @@
 /*==========================================================================;
  *
  *  File:          LSqrDll.h
- *  Version:       1.1
+ *  Version:       1.2
  *  Desc:		   LSQR DLL header
  *  Author:        Miha Grcar 
  *  Created on:    Oct-2007
